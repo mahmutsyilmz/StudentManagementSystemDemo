@@ -22,7 +22,7 @@ public class StudentController {
     private final StudentManager studentManager;
 
 
-    @GetMapping
+    @GetMapping("/getAll")
     public List<GetAllStudentResponse> getAll(){
         return this.studentManager.getAll();
     }
